@@ -1,12 +1,11 @@
 # coding:utf-8
 
-import math
-
 
 def main():
     num = raw_input("Now, say a number: ")
     if num.isdigit():
-        print math.factorial(int(num))
+        num = int(num)
+        print num * (num + 1) / 2
     else:
         print 'I say a number, dear =.='
 
